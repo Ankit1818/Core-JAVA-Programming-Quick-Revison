@@ -1,0 +1,506 @@
+ 
+=============================================			====================================
+				    Core Java Topic List And Revesion Quick
+=============================================			====================================
+
+import  java.util.Scanner;
+
+
+
+
+public class Name{
+
+public static void main(String[] args){
+
+// Line Print//
+
+System.out.println("This Is My First App");
+
+// If else\\
+int a = 13;
+int b = 10;
+int total = a+b;
+System.out.println("total");
+
+int z = 50;
+int x = 100;
+int m = 150;
+
+
+if(mark<=35)
+{
+System.out.println("Fail");
+}
+else if(mark<=70)
+{
+System.out.println("Pass");
+}
+else if(mark<=80)
+{
+System.out.println("Pass");
+}
+else
+{
+System.out.println("Chek your Grade");
+}
+
+//For and while and do while loop
+
+for(int i=0;i<=5;i++)
+{
+System.out.println(i);
+}
+
+
+i=0
+while(i<=5)
+{
+System.out.println("i");
+i++;
+}
+
+
+i=0
+do
+{
+System.out.println("i");
+i++;
+}while(i<=5);
+
+
+\\ Switch with Scanner class//
+	int mark;
+Scanner mak= new Scanner(System.in);
+System.out.println("Entere Your Mark");
+mark=mak.nextInt();
+
+switch(mark)
+{
+case 1:
+System.out.println("pass");
+break;
+
+
+case 2:
+System.out.println("pass");
+break;
+
+deafault:
+System.out.println("fail");
+}
+
+// Arry in Java//
+
+int total = 1000;
+String[] ankit=new String(total);
+ankit[0] = "1"
+ankit[1] = "2"
+System.out.println("ankit[0]");
+
+// Arry List//
+
+ArryList<String/Integer/Float> list = new ArrayList<>();
+list.add("Ankit");
+list.clere();
+System.out.println("list.get(0)");
+
+
+//Class object\\
+
+class student
+{
+int id;
+String name;
+}
+student sc = new student();
+sc.id = 123;
+sc.name = "Ankit";
+System.out.println("sc.id");
+System.out.println("sc.name");
+
+// Constructer//
+
+1.default
+2.perametraized
+	app(){
+	System.out.println("Hello");	
+}
+app a =new app();
+System.out.println(a);
+	int id;
+	String name;
+	app(int id, String name){
+	this.id=id		
+	this.name=name
+}
+app aa =new app(123, "Ankit");
+System.out.println(aa.id + aa.name);
+
+// Encapsulation in java (Model Class) \\
+
+
+public class Person {
+  private String name; // private = restricted access
+
+  // Getter
+  public Integer getId() {
+    return id;
+  }
+
+  // Setter
+  public void setId(Interger id) {
+    this.id = id;
+  }
+}
+
+// Inheritense in java \\
+5 type:
+Single Inheritance.
+Multiple Inheritance.
+Hierarchical Inheritance.
+Multilevel Inheritance.
+Hybrid Inheritance (also known as Virtual Inheritance)
+
+$$$$$$$$$(1[single])$$$$$$$$$$
+
+class a{
+void ankit(){System.out.println("Hello Ankit");}
+}
+
+class b extends a{
+void uday(){System.out.println("Hello Uday");} 
+}
+public class main{
+Public Static void main(String[] args){
+b B = new b();
+B.ankit();
+B,uday();
+}
+}
+
+$$$$$$$$$$(4[multileavel])$$$$$$$$$
+
+class a{
+void ankit(){System.out.println("Hello Ankit");}
+}
+
+class b extends a{
+void uday(){System.out.println("Hello Uday");} 
+}
+class c extends b{
+void nirav(){System.out.println("Hello Nirav")}
+}
+
+public class main{
+Public Static void main(String[] args){
+c B = new c();
+B.ankit();
+B.uday();
+B.nirav();
+}
+}
+
+$$$$$$$$$$(3[hierarchical])$$$$$$$$$
+
+
+class a{
+void ankit(){System.out.println("Hello Ankit");}
+}
+
+class b extends a{
+void uday(){System.out.println("Hello Uday");} 
+}
+class c extends a{
+void nirav(){System.out.println("Hello Nirav")}
+}
+
+public class main{
+Public Static void main(String[] args){
+b B = new b();
+c C = new c();
+B.ankit();
+B.uday();
+c.nirav();
+}
+}
+
+
+$$$$$$$$$$	Multiple $$$$$$$ 
+
+class a
+{
+	void dis(){
+		System.out.println("Class 1");	
+		}
+}
+interface b 
+{
+
+	void dis1();
+		
+}
+interface c
+{
+
+	void dis2();
+		
+}
+class d extends a implements b,c
+{
+	void dis1()
+		{
+		S.o.p();
+		}
+	void dis2()
+		{
+		S.o.p();
+		}
+	void dis3()
+		{
+		S.o.p();
+		}
+
+}
+
+d D =new d();
+D.dis();
+
+
+
+$$$$$$$$$$	Hybrid	$$$$$$$$
+
+
+
+class a
+{
+	void dis(){
+		System.out.println("Class 1");	
+		}
+}
+interface b 
+{
+
+	void dis1();
+		
+}
+interface c
+{
+
+	void dis2();
+		
+}
+interface d
+{
+
+	void dis3();
+		
+}
+class e extends a implements b,c,d
+{
+	void dis1()
+		{
+		S.o.p();
+		}
+	void dis2()
+		{
+		S.o.p();
+		}
+	void dis3()
+		{
+		S.o.p();
+		}
+	void dis4()
+		{
+		s.o.p();
+		}
+
+}
+
+d D =new d();
+D.dis();
+
+
+
+// polimerphisam //
+method overloding
+
+class a{
+void dis(int a,int b){
+s.o.p(a+b);
+}
+void dis(int a,int b,int c){
+s.o.p(a+b+c);
+}
+public class {
+public static void main(String[] args){
+a A = new a();
+A.dis(1,2);
+A.dis(1,2,3)
+}
+}
+
+class a{
+void dis2(){
+s.o.p("Hello");
+}
+class b extends a{
+void dis2(){
+s.o.p("Hello");
+}
+} 
+public static void main(String[] args){
+a A = new a();
+a B = new b();
+A.dis();
+B.dis();
+}
+}
+
+
+\\ Try Catch Finaly and throw and throws (Exeptiion e) Hendling \\
+
+
+try
+{
+		Logic Part (Main Code)
+	throw new Error name("Erroer");
+
+}
+catch(Exeption e)
+{
+	        blank
+}
+finally
+{
+		Any Satament Fix Print
+}
+
+
+
+
+// serializtion and deserialization \\
+
+import java.io.*;
+class student implements serializeble{
+	String name;
+	int id;
+}
+	student(Strinig name,int id){
+	this.name = name;
+	this.id = id;
+
+}
+
+class test{
+public static void main (String[] args){
+	try{
+		student s = new student("Ankit",123);
+		FileOutputStream fos = new FileOutputStream(D:\Ankit.txt);
+		ObjectOutputStream oob = new ObjectOutputStream(fos);
+		oob.writeObject(s);
+		oos.close();
+		fos.close();
+	   }
+	catch(Exeption e){
+	       System.out.println(e);
+	       }
+}
+}
+
+//Deserialization//
+
+
+class des{
+public static void main(String[] args){
+		student s = null;
+		   try{
+//thrownew error//	FileInputStream fis = new FileInputStream(D:\Ankit.txt);
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			s = (student)ois.readObject();
+	    	    , }
+	         catch(Exeption e)
+	         {
+			S.O.p(s.name);
+			S.O.p(s.id);
+		 }
+}
+}
+
+
+// threads \\
+
+
+extends and implements
+
+class a extends Thread{
+public main run(){
+s.o.p("Hello");
+}
+class test{
+public static void main(String[] args){
+a A = new a():
+A.start();
+
+}
+}
+}
+
+
+
+class a implements runnable{
+public main run(){
+s.o.p("Hello");
+}
+class test{
+public static void main(String[] args){
+a A = new a():
+Thread T = new Thred(A);
+T.start();
+
+}
+
+
+// File I|O //
+
+
+
+class a{
+publc static void main(String[] args){
+
+		try{
+			FileOutputStream fos = FileOutputStream("D:\");
+			fos.write(65);
+			fos.close()'
+   		   }
+		catch(Expetion e){
+		System.out.println(e); 
+		}
+
+}
+}
+
+
+class a{
+publc static void main(String[] args){
+
+		try{
+			FileOutputStream fos = FileOutputStream("D:\");
+			String s = "Hello Ankit Goswami";
+			byte b[] = s.getbyte();
+			fos.write(b);
+			fos.close()'
+   		   }
+		catch(Expetion e){
+		System.out.println(e); 
+		}
+
+}
+}
+
+
+
+
+}
+}
+}
+}
