@@ -26,6 +26,7 @@ int z = 50;
 int x = 100;
 int m = 150;
 
+// Condistional Stament In Java\\
 
 if(mark<=35)
 {
@@ -68,11 +69,15 @@ i++;
 }while(i<=5);
 
 
-\\ Switch with Scanner class//
-	int mark;
+
+//  Scanner class//
+int mark;
 Scanner mak= new Scanner(System.in);
 System.out.println("Entere Your Mark");
 mark=mak.nextInt();
+
+
+*SWITCH CASE*
 
 switch(mark)
 {
