@@ -7,7 +7,14 @@ import  java.util.Scanner;
 
 
 
+** First Creat Java In Class**
+|| Syntax:
 
+public class name{
+
+}
+
+Ex:
 public class Name{
 
 public static void main(String[] args){
@@ -16,17 +23,30 @@ public static void main(String[] args){
 
 System.out.println("This Is My First App");
 
-// If else\\
+:: Java in Get Veriable ::
+
+|| Simapley Get Like As In C Programming ||
+
+ int a;
+ Float b;
+ String c;
+ 
+EX: 
 int a = 13;
 int b = 10;
 int total = a+b;
 System.out.println("total");
 
-int z = 50;
-int x = 100;
-int m = 150;
+:: Java In Print Lable ::
+
+||Syntax
+
+System.out.println("Well-Come Java Programmer Android Application Devloper");
+
 
 // Condistional Stament In Java\\
+
+:: If, Else If Statement ::
 
 if(mark<=35)
 {
@@ -71,6 +91,28 @@ i++;
 
 
 //  Scanner class//
+## Scanner Use For Java in Give Value Froum User Like Work As In C Programming In Prinftf();
+
+**
+First Step:
+import java.util.Scanner;
+
+And Than After 
+
+Make Object Of Scanner
+
+Scanner Sc=new Scanner(System.in);
+Variable Name=sc.NextLine();
+
+Note:
+
+Use:
+int   nextInt();
+String  nextLine();
+Float   nextFlot();
+
+
+EX:
 int mark;
 Scanner mak= new Scanner(System.in);
 System.out.println("Entere Your Mark");
@@ -95,7 +137,12 @@ System.out.println("fail");
 }
 
 // Arry in Java//
+:: Syntax
 
+String[] Anyname={"Java","Android","C"};
+
+
+EX:
 int total = 1000;
 String[] ankit=new String(total);
 ankit[0] = "1"
@@ -103,7 +150,12 @@ ankit[1] = "2"
 System.out.println("ankit[0]");
 
 // Arry List//
+:: Syntax:
+||
+ArryList<String/Integer/Float> list = new ArrayList<>();
 
+
+EX:
 ArryList<String/Integer/Float> list = new ArrayList<>();
 list.add("Ankit");
 list.clere();
@@ -509,3 +561,8 @@ publc static void main(String[] args){
 }
 }
 }
+Above All Content Is Inef For Make Android Application
+
+
+Any Query Send Mail:
+ankitgoswami1818@gmail.com
