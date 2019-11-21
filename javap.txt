@@ -11,9 +11,10 @@ import  java.util.Scanner;
 || Syntax:
 
 public class name{
-
+public static void main (String [] args)
 }
-
+Is Method
+public static void main (String [] args)
 Ex:
 public class Name{
 
